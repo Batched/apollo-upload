@@ -8,10 +8,10 @@ A [terminating Apollo Link](https://apollographql.com/docs/react/api/link/introd
 
 ## Setup
 
-To install with [npm](https://npmjs.com/get-npm), run:
+To install with [yarn](https://yarnpkg.com/getting-started), run:
 
 ```sh
-npm install apollo-upload-client
+yarn add apollo-upload-client
 ```
 
 Remove any `uri`, `credentials`, or `headers` options from the [`ApolloClient` constructor](https://apollographql.com/docs/react/api/core/ApolloClient/#the-apolloclient-constructor).
@@ -34,7 +34,7 @@ See also the [example API and client](https://github.com/jaydenseric/apollo-uplo
 import { gql, useMutation } from "@apollo/client"
 
 const MUTATION = gql`
-  mutation($files: [Upload!]!) {
+  mutation ($files: [Upload!]!) {
     uploadFiles(files: $files) {
       success
     }
@@ -58,7 +58,7 @@ function UploadFiles() {
 import { gql, useMutation } from "@apollo/client"
 
 const MUTATION = gql`
-  mutation($file: Upload!) {
+  mutation ($file: Upload!) {
     uploadFile(file: $file) {
       success
     }
@@ -87,7 +87,7 @@ function UploadFile() {
 import { gql, useMutation } from "@apollo/client"
 
 const MUTATION = gql`
-  mutation($file: Upload!) {
+  mutation ($file: Upload!) {
     uploadFile(file: $file) {
       success
     }

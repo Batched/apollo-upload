@@ -8,7 +8,7 @@
 // imports
 // ==============================================================================
 
-import { ApolloLink } from "@apollo/client/core"
+import { ApolloLink } from "@apollo/client"
 import { HttpOptions } from "@apollo/client/link/http"
 import { ExtractableFile, isExtractableFile } from "extract-files"
 
@@ -44,7 +44,7 @@ export { isExtractableFile, ReactNativeFile } from "extract-files"
  */
 export function createUploadLink(
   uploadLinkOptions?: UploadLinkOptions
-): ApolloLink
+): Exclude<ApolloLink, { split: ApolloLink["split"] }>
 
 /**
  * The default implementation for [`createUploadLink`](https://github.com/jaydenseric/apollo-upload-client#function-createuploadlink) `options.formDataAppendFile`
