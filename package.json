@@ -1,5 +1,5 @@
 {
-  "name": "@packages/apollo-upload",
+  "name": "@cartons/apollo-upload",
   "version": "0.0.1-alpha.1",
   "description": "A terminating Apollo Link for Apollo Client that fetches a GraphQL multipart request if the GraphQL variables contain files (by default FileList, File, Blob, or ReactNativeFile instances), or else fetches a regular GraphQL POST or GET request (depending on the config and GraphQL operation).",
   "license": "Unlicense",
